@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AuthLayout from "../../components/Layout/AuthLayout";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/Input/input";
+import Input from "../../components/input/input";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -26,6 +26,17 @@ const Login = () => {
             placeholder="john@gmail.com"
             type="text"
           />
+          <Input
+            value={password}
+            onChange={({ target }) => setPassword(target.value)}
+            label="Password"
+            placeholder="Min 8 characters"
+            type="password"
+          />
+
+          {error && <p className="">{error}</p>}
+
+          <button>LOGIN</button>
         </form>
       </div>
     </AuthLayout>
