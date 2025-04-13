@@ -1,5 +1,5 @@
 const SignUp = () => {
-  return <div>SignUp</div>;
+  return <div>SignUp page</div>;
 };
 
 export default SignUp;
