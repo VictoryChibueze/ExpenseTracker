@@ -3,6 +3,7 @@ import AuthLayout from "../../components/Layout/AuthLayout";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/input/input";
 import { validateEmail } from "../../utils/helper";
+import ProfilePhotoSelector from "../../components/input/ProfilePhotoSelector";
 
 const SignUp = () => {
   const [profilePic, setProfilePic] = useState(null);
@@ -14,9 +15,10 @@ const SignUp = () => {
 
   const navigate = useNavigate();
 
-  // Handle Sign up form submit
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+  };
 
-  const handleSignUp = async (e) => {};
   return (
     <AuthLayout>
       <div className="lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
@@ -52,6 +54,15 @@ const SignUp = () => {
               />
             </div>
           </div>
+          {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
+
+          <button className="btn-primary">SIGN UP</button>
+          <p className="text-[13px] text-slate-800 mt-3">
+            Already have an account? {""}
+            <Link className="font-medium text-primary underline" to="/login">
+              Login
+            </Link>
+          </p>
         </form>
       </div>
     </AuthLayout>
