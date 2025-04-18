@@ -17,6 +17,27 @@ const SignUp = () => {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
+
+    let profileImageUrl = "";
+
+    if (!fullName) {
+      setError("Please enter your name");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      setError("Please enter a valid Email");
+      return;
+    }
+
+    if (!password) {
+      setError("Please enter the password");
+      return;
+    }
+
+    setError("");
+
+    // SIGN UP API CALL
   };
 
   return (
