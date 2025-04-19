@@ -2,9 +2,9 @@
 
 {Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
+As a software engineer focused on developing practical and user-friendly web applications, I created this Expense Tracker to strengthen my full-stack development skills. The app helps users manage their personal finances by tracking incomes and expenses, offering a clear view of their current balance, transaction history, and spending habits.
 
-{Describe your purpose for writing this software.}
+This project allowed me to explore key software engineering concepts like state management, CRUD operations, and dynamic rendering of data, while practicing UI design and responsive layouts.
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
@@ -16,21 +16,28 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+• Code Editor: Visual Studio Code
+• Front-End: React (Vite)
+• Styling: TailwindCSS
+• Routing: React Router
+• State Management: React's useState
+• Data Persistence: Back-end API implemented with MongoDB as database
+• Version Control: Git & GitHub
+• API: ExpressJs and NodeJs
 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [ReactJs documentation](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/docs/installation/using-vite)
+- [ExpressJS](https://expressjs.com/)
+- [TailwindCSS](https://tailwindcss.com/docs/installation/using-vite)
 
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
 
-- Item 1
-- Item 2
-- Item 3
+• Add charts/graphs for visualizing spending habits
+• Enable CSV export of transactions
+• Add mobile push or email notifications for budget limits
